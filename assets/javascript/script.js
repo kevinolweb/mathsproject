@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',function(){
     for (let button of buttons){
         button.addEventListener('click',function(){
             if (this.getAttribute("data-type")==='submit'){
-                calculateCorrect(); 
+                alert("Hi")
             }
             else {
                 let gameType = this.getAttribute("data-type");
@@ -46,7 +46,7 @@ function calculateCorrect(){
         alert("You got it right!")
     }
     else {
-        alert `Sorry the correct answer is ${Corans}`
+        alert `Sorry the correct answer is ${Corans[0]}`
     }
     runGame(Corans[1])
 }
